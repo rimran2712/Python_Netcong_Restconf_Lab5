@@ -1,0 +1,38 @@
+---
+
+cisco_group:
+    platform: "iosxe"
+    port: 830
+    
+arista_group:
+    platform: "eos"
+    
+juniper_group:
+    platform: "junos"
+
+nexus_group:
+    #platform: "nxos"
+    platform: "nxos_ssh"
+
+
+#Supported device handlers
+#    Juniper: device_params={‘name’:’junos’}
+
+#    Cisco:
+#            CSR: device_params={‘name’:’csr’}
+#            Nexus: device_params={‘name’:’nexus’}
+#            IOS XR: device_params={‘name’:’iosxr’}
+#            IOS XE: device_params={‘name’:’iosxe’}
+#
+#    Huawei:
+#            device_params={‘name’:’huawei’}
+#            device_params={‘name’:’huaweiyang’}
+#
+#    Nokia SR OS: device_params={‘name’:’sros’}
+#
+#    H3C: device_params={‘name’:’h3c’}
+#
+#    HP Comware: device_params={‘name’:’hpcomware’}
+#
+#    Server or anything not in above: device_params={‘name’:’default’}
+
