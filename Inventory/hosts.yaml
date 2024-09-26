@@ -2,7 +2,6 @@
 
 CSR-R1:
     hostname: 172.16.100.2
-    #port: 830
     groups:
         - cisco_group
     data:
@@ -11,13 +10,9 @@ CSR-R1:
                 name: lo0
                 ip: 1.1.1.1
                 mask: 255.255.255.255
-            Gi0/1:
-                name: Gi0/1
-                ip: 10.1.3.1
-                mask: 255.255.255.0
-            Gi0/2:
-                name: Gi0/2
-                ip: 10.1.4.1
+            GigabitEthernet2:
+                name: GigabitEthernet2
+                ip: 10.1.2.1
                 mask: 255.255.255.0
         bgp:
             localAsn: 65001
@@ -31,7 +26,6 @@ CSR-R1:
                   remoteAsn: 65004
 CSR-R2:
     hostname: 172.16.100.6
-    port: 830
     groups:
         - cisco_group
     data:
@@ -40,13 +34,9 @@ CSR-R2:
                 name: lo0
                 ip: 2.2.2.2
                 mask: 255.255.255.255
-            Gi0/1:
-                name: Gi0/1
-                ip: 10.2.4.2
-                mask: 255.255.255.0
-            Gi0/2:
-                name: Gi0/2
-                ip: 10.2.3.2
+            GigabitEthernet2:
+                name: GigabitEthernet2
+                ip: 10.1.2.2
                 mask: 255.255.255.0
         bgp:
             localAsn: 65001
